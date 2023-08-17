@@ -415,6 +415,9 @@ button:hover,
   grid-gap: 1.2em;
   margin-top: 1rem;
 }
+.features .grid .card {
+  cursor: pointer;
+}
 .features .grid .card img {
   width: 45px;
   aspect-ratio: 1;
