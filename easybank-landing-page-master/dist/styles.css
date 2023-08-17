@@ -69,7 +69,10 @@ body.scroll {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-weight: 300;
   margin-top: 0;
 }
@@ -311,7 +314,7 @@ button:hover,
     background: #000;
     width: 110%;
     height: 120%;
-    right: -38%;
+    right: -41%;
     background: url("/images/image-mockups.png");
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -342,4 +345,86 @@ button:hover,
 .hero--text p {
   line-height: 1.5;
   margin-bottom: 2.5rem;
+}
+
+.features {
+  padding: 1.5rem 0;
+  background: hsl(220, 16%, 96%);
+}
+.features .feature p {
+  margin-bottom: 2.5rem;
+}
+.features .feature .card p {
+  line-height: 1.8;
+}
+@media (max-width: 39.9375em) {
+  .features {
+    text-align: center;
+  }
+}
+.features .feature-articles {
+  background: hsl(0, 0%, 98%);
+}
+.features .feature-articles h2 {
+  margin-block: 2rem;
+}
+@media (max-width: 39.9375em) {
+  .features .feature-articles h2 {
+    margin-top: 0;
+  }
+}
+.features .feature-articles .card {
+  border-radius: 0.2rem;
+  background: hsl(0, 0%, 100%);
+}
+@media (max-width: 39.9375em) {
+  .features .feature-articles .card {
+    text-align: left;
+  }
+}
+.features .feature-articles .card .img {
+  height: 180px;
+}
+.features .feature-articles .card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+}
+.features .feature-articles .card-content {
+  padding: 1rem;
+}
+.features .feature-articles .card-content .writer {
+  font-size: 0.67rem;
+  color: hsl(233, 26%, 24%);
+  opacity: 0.4;
+}
+.features .feature-articles .card-content h4 {
+  color: hsl(233, 26%, 24%);
+}
+.features h2 {
+  color: hsl(233, 26%, 24%);
+  font-size: 2rem;
+}
+.features p {
+  font-size: 1.125rem;
+  max-width: 42rem;
+}
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1.2em;
+  margin-top: 1rem;
+}
+.features .grid .card img {
+  width: 45px;
+  aspect-ratio: 1;
+  margin-bottom: 0.8rem;
+}
+.features .grid .card h3 {
+  color: hsl(233, 26%, 24%);
+  margin: 0;
+  padding: 0;
+}
+.features .grid .card p {
+  font-size: 0.875rem;
 }/*# sourceMappingURL=styles.css.map */

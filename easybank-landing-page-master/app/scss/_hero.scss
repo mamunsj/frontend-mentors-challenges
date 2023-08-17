@@ -1,3 +1,78 @@
+// .hero {
+//   background: $veryLightGray;
+//   .container {
+//     @include brekpoint-up(large) {
+//       position: relative;
+//       display: flex;
+//       height: 41rem;
+//       align-items: center;
+//       border: 1px solid darkblue;
+//     }
+//   }
+
+//   &--img-section {
+//     position: relative;
+//     background: url("/images/bg-intro-mobile.svg");
+//     min-height: 290px;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center 40%;
+//     @include brekpoint-up(medium) {
+//       min-height: 400px;
+//     }
+//     @include brekpoint-up(large) {
+//       flex: 1;
+//       order: 2;
+//       min-height: 100%;
+//       //   position: absolute;
+
+//       background: url("/images/bg-intro-desktop.svg");
+//       background-size: 1320px;
+//       background-repeat: no-repeat;
+//       //   background-image: none;
+//     }
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       background: url("/images/image-mockups.png");
+//       background-repeat: no-repeat;
+//       background-size: 140%;
+//       background-position: center;
+//       left: 50%;
+//       //   width: 100%;
+//       //   height: 100%;
+//       transform: translateX(-50%);
+
+//       @include brekpoint-up(large) {
+//         height: 120%;
+//         width: 100%;
+//       }
+//     }
+//   }
+
+//   &--text {
+//     text-align: center;
+//     @include brekpoint-up(large) {
+//       flex: 1;
+//       order: 1;
+//       text-align: left;
+//     }
+//     h1 {
+//       color: $darkBlue;
+//       line-height: 1.15;
+//       font-size: 2.31rem;
+//       margin-bottom: 1.5rem;
+//       @include brekpoint-up(large) {
+//         font-size: 3.25rem;
+//       }
+//     }
+//     p {
+//       line-height: 1.5;
+//       margin-bottom: 2.5rem;
+//     }
+//   }
+// }
+
 .hero {
   @include brekpoint-up(large) {
     position: relative;
@@ -56,7 +131,7 @@
         background: #000;
         width: 110%;
         height: 120%;
-        right: -38%;
+        right: -41%;
         background: url("/images/image-mockups.png");
         background-position: right bottom;
         background-repeat: no-repeat;

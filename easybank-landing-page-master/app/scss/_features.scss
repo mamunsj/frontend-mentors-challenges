@@ -1,0 +1,82 @@
+.features {
+  padding: 1.5rem 0;
+  background: $lightGrayishBlue;
+
+  .feature {
+    p {
+      margin-bottom: 2.5rem;
+    }
+    .card p {
+      line-height: 1.8;
+    }
+  }
+  @include brekpoint-down(small) {
+    text-align: center;
+  }
+
+  .feature-articles {
+    background: $veryLightGray;
+    h2 {
+      margin-block: 2rem;
+      @include brekpoint-down(small) {
+        margin-top: 0;
+      }
+    }
+    .card {
+      border-radius: 0.2rem;
+      background: $white;
+      @include brekpoint-down(small) {
+        text-align: left;
+      }
+      .img {
+        height: 180px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.2rem;
+        }
+      }
+      &-content {
+        padding: 1rem;
+        .writer {
+          font-size: 0.67rem;
+          color: $darkBlue;
+          opacity: 0.4;
+        }
+        h4 {
+          color: $darkBlue;
+        }
+      }
+    }
+  }
+  h2 {
+    color: $darkBlue;
+    font-size: 2rem;
+  }
+  p {
+    font-size: $font-md;
+    max-width: 42rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.2em;
+    margin-top: 1rem;
+
+    .card {
+      img {
+        width: 45px;
+        aspect-ratio: 1;
+        margin-bottom: 0.8rem;
+      }
+      h3 {
+        color: $darkBlue;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        font-size: $font-sm;
+      }
+    }
+  }
+}
